@@ -14,6 +14,7 @@ then
     if [[ $? -eq 0 ]]
     then
         echo "[Success] ready to push"
+        git log --graph --all --oneline --decorate
     else
         echo "[Failed] git commit -m '$2'."
     fi
