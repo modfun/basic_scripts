@@ -7,7 +7,7 @@ do
 	gcc_name=$(echo $x | rev | cut -d '.' -f 2- | rev)
 done
 
-gcc -o $gcc_name.out -v -ggdb -pedantic -Wall -Werror -Wextra -std=gnu89 $gcc_files | less
+gcc -o $gcc_name.out -v -ggdb -pedantic -Wall -Werror -Wextra -std=gnu89 $gcc_files
 
 echo
 echo "[Compiled] $gcc_files"
